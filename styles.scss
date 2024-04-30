@@ -1,0 +1,51 @@
+@use '@angular/material' as mat;
+
+
+@font-face {
+  font-family: 'Graphik';
+  src: url('assets/GraphikBlack.otf') format('opentype');
+}
+@font-face{
+  font-family: 'Heading';
+  src:url('assets/Heading Regular.ttf') format('opentype')
+}
+
+@font-face {
+  font-family: 'SNECHY';
+  src: url('assets/SNECHY.otf') format('opentype');
+}
+
+@include mat.core();
+
+$portfolio-primary: mat.define-palette(mat.$yellow-palette);
+$portfolio-accent: mat.define-palette(mat.$blue-palette);
+$portfolio-warn: mat.define-palette(mat.$pink-palette);
+
+$portfolio-theme: mat.define-light-theme((
+  color: (
+    primary: $portfolio-primary,
+    accent: $portfolio-accent,
+    warn: $portfolio-warn,
+  )
+));
+
+@include mat.all-component-themes($portfolio-theme);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+  background-color: blue;
+  font-family: 'Inter';
+  height: 100%;
+}
+
+html, body {scroll-behavior: smooth; height: 100%; cursor:default }
+body { margin: 0; font-family: "Heading", sans-serif; }
+
+
+@media(max-width: 450px){
+  .intro, .main{
+    width:400px;
+   
+  }
+}

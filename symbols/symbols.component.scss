@@ -1,0 +1,27 @@
+.main
+> button{
+  background: none;
+    border: none;
+    outline: none;
+    cursor:pointer;
+  > img{
+    width: 40px;
+    height:40px;
+  }
+
+}
+.main{
+  margin-right:10px;
+}
+
+@media(max-width:450px){
+  .main {
+    width:25px;
+    height: 25px;
+    margin-bottom:25px;
+    gap:40px;
+    margin-right:25px;
+    margin-top:25px;
+  }
+
+}

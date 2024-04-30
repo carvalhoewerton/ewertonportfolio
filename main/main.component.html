@@ -1,0 +1,70 @@
+<div class="main">
+  <div class="intro">
+    <app-header></app-header>
+    <app-aboutme></app-aboutme>
+
+    <div class="myskils">
+        <h1>My Skills</h1>
+        <div class="skills-container">
+            <app-skills [img]="'assets/symbols/gitl.png'" [name]="'Git'"></app-skills>
+            <app-skills [img]="'assets/symbols/a.png'" [name]="'Angular'"></app-skills>
+            <app-skills [img]="'assets/symbols/sb.png'" [name]="'Spring'"></app-skills>
+            <app-skills [img]="'assets/symbols/png-transparent-typescript-hd-logo-thumbnail.png'" [name]="'Typescript'"></app-skills>
+            <app-skills [img]="'assets/symbols/121152.png'" [name]="'Java'"></app-skills>
+            <app-skills [img]="'assets/symbols/html_black_logo_icon_147124.png'" [name]="'HTML'"></app-skills>
+            <app-skills [img]="'assets/symbols/sass.png'" [name]="'SCSS'"></app-skills>
+            <app-skills [img]="'assets/symbols/g.png'" [name]="'PostgreSQL'"></app-skills>
+            <app-skills [img]="'assets/symbols/do.png'" [name]="'Docker'"></app-skills>
+            <app-skills [img]="'assets/symbols/ra.png'" [name]="'RabbitMQ'"></app-skills>
+        </div>
+    </div>
+        <section><div class="am">
+          <div class="limg">
+            <img src="assets/eu.jpg" alt="" srcset="">
+          </div>
+          <div class="text">
+            <h1>About Me</h1>
+            <p>I'm a passionate, self-proclaimed developer who specializes in full-stack development (Java/Spring and Typescript/Angular). I'm very enthusiastic about developing the API and the client side.</p>
+            <p>I began my journey when I started the Information Technology degree at UFRN, and, since then, I've continued to grow and evolve as a developer, taking on new challenges and learning the latest technologies along the way. </p>
+            <p>Now I'm in the fifth semester, two years after starting my development journey, I'm building cutting-edge web applications using modern technologies such as Angular and Spring. You can follow me on GitHub where I often post my code.</p>
+          </div>
+        </div>
+        </section>
+
+        <div class="mpj">
+          <h1 class="h">My Projects</h1>
+          <div class="pr">
+            <app-project [link]="'https://github.com/carvalhoewerton/movieapiui'" [reverse]="false" [img]="'assets/p1.png'" [title]="'Movie Query'" [p]="'This projects contains a API Spring that uses OpenFeign to consume the OMDB API, and a User Interface where you can search for a movie and it shows the details lake name,director and genre.'"></app-project>
+            <div class="pt"><app-project [link]="'https://github.com/carvalhoewerton/productsecurity'"  [img]="'assets/p2.png'" [title]="'Security Products'" [p]="'This application consists of a Spring API divided into two parts: The first part includes product endpoints, while the second part comprises a Spring Security configuration. With the security configuration, users can be created and authenticated using JWT. Once authenticated, users can manage the product endpoints according to their assigned roles. Additionally, the application includes a Angular User Interface where users can create an account, log in, and perform CRUD operations on products.'" > </app-project></div>
+            <app-project [link]="'https://github.com/carvalhoewerton/Spring-RabbitMQ-API'" [img]="'assets/p3.png'" [title]="'Payment Messaging'" [p]="'In this Spring application, you can send payment messages to another Spring application using RabbitMQ services that have been deployed via a Docker container.'"> </app-project>
+            <div class="em"><app-project [link]="'https://github.com/carvalhoewerton/microserviceemailsender'" [img]="'assets/p4.png'" [title]="'Email Sender'" [p]="'In this application, you can send emails using the Java Mail Sender along with Gmail. To activate this feature, you must include a 16-character Gmail API key in the applications configuration. Once configured, you can send emails by providing your email address, the recipients address, the subject, and the message text. After sending an email, the application automatically stores the email details, including sender, recipient, subject, and message text, into a PostgreSQL database. This ensures that a record of each email sent is maintained for future reference or auditing purposes.'"> </app-project></div>
+          </div>
+        </div>
+
+        <div class="contact">
+            <div class="input">
+              <input  #nameInput1 type="text" name="name"  placeholder="Your name"  />
+              <input  #nameInput2 type="text" name="name"  placeholder="Email" />
+              <input  #nameInput3 type="text" name="name" placeholder="Website (if exists)" />
+              <input class="ult" #passInput style="height:80px;" type="text"  name="pass" placeholder="How can i help?" />
+            <div class="submit">
+                    <button (click)="clearInputs(nameInput1, nameInput2, nameInput3, passInput)" >Get in touch</button>
+                    <app-symbols [url]="'https://github.com/carvalhoewerton'"[img]="'assets/symbols/githubb.png'"></app-symbols>
+                    <app-symbols [url]="'https://www.linkedin.com/in/luanewerton/'"[img]="'assets/symbols/ld1.png'"></app-symbols>
+                    <app-symbols [url]="'https:/instagram.com/ewertonlcs'" [img]="'assets/symbols/ig.png'"></app-symbols>
+            </div>
+            </div>
+          <div class="talk">
+            <h1>Let's talk for Something special </h1>
+            <p>I seek to push the limits of creativity to create high-engaging, user friendly and memorable interactive experiences.</p>
+            <h3>eww999&#64;hotmail.com</h3>
+            <h3>(84)986022986</h3>
+          </div>
+        </div>
+
+
+  </div>
+
+</div>
+
+

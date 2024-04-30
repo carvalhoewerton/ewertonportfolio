@@ -1,0 +1,74 @@
+.main {
+  font-family: "Inter";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  padding:15px;
+  height:10px;
+  margin-bottom:25px;
+
+
+}
+.texto {
+  margin-left: 300px;
+  margin:0;
+  font-weight: bold;
+  word-spacing:15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.but {
+  position: absolute;
+  right: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #14171c;
+}
+
+.but button {
+  background-color: black;
+  color: white;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: 'Inter';
+  font-weight: bold;
+  justify-content: center;
+  display:flex;
+
+}
+
+.but mat-icon {
+  color: white;
+  transform: scale(0.8);
+}
+
+.custom-button {
+  font-family: 'HeadingNowTrial-Thin', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: yellow;
+  cursor:pointer;
+  border: none;
+  transform: scale(1.2);
+  margin-right:15px;
+
+}
+
+
+@media
+(max-width:450px){
+  .main {
+    width:400px;
+    margin-bottom:0px;
+
+  }
+  .but {
+    transform: scale(0.7);
+    margin-top:-65px;
+  }
+}
+
